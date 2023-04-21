@@ -1,0 +1,20 @@
+.sign-in {
+    background: linear-gradient(45deg, rgb(95, 230, 138), rgb(160, 204, 65));
+    color: white;
+}
+
+.sign-in a {
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.sign-up p{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.sign-up .button{
+    background: linear-gradient(45deg, rgb(95, 230, 138), rgb(160, 204, 65));
+    color: white;
+}

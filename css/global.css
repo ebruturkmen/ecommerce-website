@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+}
+
+:root {
+    --green: rgb(63, 228, 118);
+    --light-green: rgb(241, 255, 231);
+}
+
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* breadcrumb */
+
+.breadcrumb {
+    width: 80%;
+    margin: 0 auto;
+    color: grey;
+}
+
+.breadcrumb ul {
+    display: flex;
+    gap: 16px;
+}
+
+.breadcrumb ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.breadcrumb ul li+li:before {
+    content: '>';
+    font-size: 1.2rem;
+}
+
+.breadcrumb ul li a.active {
+    color: rgb(164, 164, 164);
+    font-size: 0.9rem;
+}
+
+/* Pagination */
+.pagination-section {
+    margin: 3rem auto;
+    width: 40%;
+}
+
+.pagination-section ul {
+    display: flex;
+    gap: 10px;
+}
+
+.pagination-section ul li a {
+    color: rgb(59, 59, 59);
+    height: 30px;
+    min-width: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-section ul li:first-child a::before {
+    content: '<';
+    margin-right: 20px;
+}
+
+.pagination-section ul li:last-child a::after {
+    content: '>';
+    margin-left: 20px;
+}
+
+.pagination-section ul li a.active, .pagination-section ul li a:hover {
+    color: rgb(59, 59, 59);
+    background-color:rgb(248, 125, 54);
+    border-radius: 4px;
+    color: white;
+}

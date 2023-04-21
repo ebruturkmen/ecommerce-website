@@ -1,0 +1,1643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Go</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap" rel="stylesheet">
+    <!-- Swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- owl carousel -->
+    <link rel = "stylesheet" href = "../owl_carousel/owl.carousel.css">
+    <link rel = "stylesheet" href = "../owl_carousel/owl.theme.default.css">
+    <!-- my css -->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/shop.css">
+</head>
+<body>
+
+    <!-- Header start -->
+    <header id="header">
+        <a href="#" class="logo">SHOP GO</a>
+        <nav id="navbar">
+            <ul class="navbar-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="active">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="favorities.html">Favorities</a></li>
+                <li><a href="destek.html">Support</a></li>
+            </ul>
+        </nav>
+        <div class="header-group">
+            <button>
+                <ion-icon name="search" id="searchicon"></ion-icon>
+            </button>
+            <button>
+                <a href="../html/sign.html"><ion-icon name="person"></ion-icon></a>
+            </button>
+            <button>
+                <ion-icon name="cart" id="carticon"></ion-icon>
+            </button>
+            
+            <div class="search-input" id="searchinput">
+                <input type="text" placeholder="Search">
+                <ion-icon name="search" id="searchicon"></ion-icon>
+            </div>
+
+            <div class="cart-box">
+                <div class="cart-item">
+                    <div class="product">
+                        <img src="../images/electronic/electronic10.png" alt="">
+                        <h6 class="item-name">Sony Xperia 16GB 10.1" Tablet</h6>
+                    </div>
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+                <div class="cart-item">
+                    <div class="product">
+                        <img src="../images/shoes/shoes2.png" alt="">
+                        <h6 class="item-name">Balenciaga Running Shoes</h6>
+                    </div>
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+                <div class="cart-item">
+                    <div class="product">
+                        <img src="../images/shoes/bag4.png" alt="">
+                        <h6 class="item-name">Burton Blue Backpack</h6>
+                    </div>
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+                <div class="cart-item">
+                    <div class="product">
+                        <img src="../images/home/furniture1.png" alt="">
+                        <h6 class="item-name">Riolight Retro Single Metal Pendant Chandelier</h6>
+                    </div>
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+                <a href="shoppingcart.html" class="cart-btn">go to cart</a>
+            </div>
+
+            <div class="menuToggle"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Breadcrumb Start -->
+    <section id="breadcrumb">
+        <div class="breadcrumb">
+            <ul>
+                <li><a href="index3.html">Home</a></li>
+                <li><a href="#" class="active">Shop</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- Breadcrumb End -->
+
+    <!-- Shop Section Start -->
+    <section id="shop">
+        <div class="container">
+            <!-- category sidebar -->
+            <div class="column side-bar nav-mobile">
+                <div class="shop-category-item">
+                    <div class="shop-category">
+                        <h6>Category</h6>
+                        <ion-icon name="caret-down-outline" class="hide-category"></ion-icon>
+                    </div>
+                    <div class="shop-category-box">
+                        <form>
+                            <input class="search-category" type="text" id="category" name="category" placeholder="search category">
+                            <input type="checkbox" id="shoebag" name="category1" value="shoebag">
+                            <label for="shoebag">Shoe & Bag</label><br>
+                            <input type="checkbox" id="home" name="category2" value="home">
+                            <label for="home">Home & Furniture</label><br>
+                            <input type="checkbox" id="supermarket" name="category3" value="supermarket">
+                            <label for="supermarket">Supermarket</label><br>
+                            <input type="checkbox" id="cosmetic" name="category4" value="cosmetic">
+                            <label for="cosmetic">Cosmetic</label><br>
+                            <input type="checkbox" id="watchaccessories" name="category5" value="watchaccessories">
+                            <label for="watchaccessories">Watch & Accessories</label><br>
+                            <input type="checkbox" id="electronic" name="category6" value="electronic">
+                            <label for="electronic">Electronic</label><br>
+                            <input type="checkbox" id="sport" name="category7" value="sport">
+                            <label for="sport">Sport</label><br>
+                            <input type="checkbox" id="fashion" name="category8" value="fashion">
+                            <label for="fashion">Fashion</label><br>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="shop-category-item">
+                    <div class="shop-category">
+                        <h6>Gender</h6>
+                        <ion-icon name="caret-down-outline" class="hide-category"></ion-icon>
+                    </div>
+                    <div class="shop-category-box">
+                        <form>
+                            <input type="checkbox" id="woman" name="gender1" value="woman">
+                            <label for="woman">Woman</label><br>
+                            <input type="checkbox" id="male" name="gender2" value="male">
+                            <label for="male">Male</label><br>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="shop-category-item">
+                    <div class="shop-category">
+                        <h6>Brand</h6>
+                        <ion-icon name="caret-down-outline" class="hide-category"></ion-icon>
+                    </div>
+                    <div class="shop-category-box">
+                        <form>
+                            <input class="search-category" type="text" id="brand" name="brand" placeholder="search brand">
+                            <input type="checkbox" id="stradivarius" name="brand1" value="stradivarius">
+                            <label for="stradivarius">Stradivarius</label><br>
+                            <input type="checkbox" id="mango" name="brand2" value="mango">
+                            <label for="mango">Mango</label><br>
+                            <input type="checkbox" id="koton" name="brand3" value="koton">
+                            <label for="koton">Koton</label><br>
+                            <input type="checkbox" id="bershka" name="brand4" value="bershka">
+                            <label for="bershka">Bershka</label><br>
+                            <input type="checkbox" id="defacto" name="brand5" value="defacto">
+                            <label for="defacto">Defacto</label><br>
+                            <input type="checkbox" id="dilvin" name="brand6" value="dilvin">
+                            <label for="dilvin">Dilvin</label><br>
+                            <input type="checkbox" id="karaca" name="brand7" value="karaca">
+                            <label for="karaca">Karaca</label><br>
+                            <input type="checkbox" id="schafer" name="brand8" value="schafer">
+                            <label for="schafer">Schafer</label><br>
+                            <input type="checkbox" id="korkmaz" name="brand9" value="korkmaz">
+                            <label for="korkmaz">Korkmaz</label><br>
+                            <input type="checkbox" id="adidas" name="brand10" value="adidas">
+                            <label for="adidas">Adidas</label><br>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="shop-category-item">
+                    <div class="shop-category">
+                        <h6>Size</h6>
+                        <ion-icon name="caret-down-outline" class="hide-category"></ion-icon>
+                    </div>
+                    <div class="shop-category-box">
+                        <form>
+                            <input type="checkbox" id="xxs" name="size1" value="xxs">
+                            <label for="xxs">XXS</label><br>
+                            <input type="checkbox" id="xs" name="size2" value="xs">
+                            <label for="xs">XS</label><br>
+                            <input type="checkbox" id="s" name="size3" value="s">
+                            <label for="s">S</label><br>
+                            <input type="checkbox" id="m" name="size4" value="m">
+                            <label for="m">M</label><br>
+                            <input type="checkbox" id="l" name="size5" value="l">
+                            <label for="l">L</label><br>
+                            <input type="checkbox" id="xl" name="size6" value="xl">
+                            <label for="xl">XL</label><br>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="shop-category-item">
+                    <div class="shop-category">
+                        <h6>Color</h6>
+                        <ion-icon name="caret-down-outline" class="hide-category"></ion-icon>
+                    </div>
+                    <div class="shop-category-box">
+                        <div class="colors">
+                            <button class="color red"></button>
+                            <button class="color yellow"></button>
+                            <button class="color green"></button>
+                            <button class="color blue"></button>
+                            <button class="color white"></button>
+                            <button class="color pink"></button>
+                            <button class="color black"></button>
+                            <button class="color purple"></button>
+                            <button class="color orange"></button>
+                            <button class="color grey"></button>
+                            <button class="color brown"></button>
+                            <button class="color multicolored"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-category-item">
+                    <div class="shop-category">
+                        <h6>Price</h6>
+                        <ion-icon name="caret-down-outline" class="hide-category"></ion-icon>
+                    </div>
+                    <div class="shop-category-box">
+                        <div class="price-text-input">
+                            <form>
+                                <input type="text" id="minprice" name="minprice" placeholder="min">
+                                <span>-</span>
+                                <input type="text" id="maxprice" name="maxprice" placeholder="max">
+                                <input type="submit" value="search">
+                            </form>
+                        </div>
+                        <form>
+                            <input type="checkbox" id="price1" name="price1" value="price1">
+                            <label for="price1">0 TL - 30 TL</label><br>
+                            <input type="checkbox" id="price2" name="price2" value="price2">
+                            <label for="price2">30 TL - 80 TL</label><br>
+                            <input type="checkbox" id="price3" name="price3" value="price3">
+                            <label for="price3">80 TL - 100 TL</label><br>
+                            <input type="checkbox" id="price4" name="price4" value="price4">
+                            <label for="price4">100 TL 175 TL</label><br>
+                            <input type="checkbox" id="price5" name="price5" value="price5">
+                            <label for="price5">175 TL - 600 TL</label><br>
+                            <input type="checkbox" id="price6" name="price6" value="price6">
+                            <label for="price6">600 TL - 25000 TL</label><br>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="column shop-main">
+                <div class="product-sorting">
+                    <form>
+                        <select name="sort" id="sort">
+                            <option value="suggested" selected>Suggested</option>
+                            <option value="lowestprice">Lowest Price</option>
+                            <option value="highestprice">Highest Price</option>
+                            <option value="latestproducts">Latest Products</option>
+                            <option value="bestsellers">Bestsellers</option>
+                            <option value="topfavorites">Top Favorites</option>
+                            <option value="mostrated">Most Rated</option>
+                        </select>
+                    </form>
+                </div>
+
+                <div class="shop-main-container">
+                    <div class="full-product">
+                        <img src="../images/shoes/shoes2.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Shoes & Bags</span>
+                            <a href="#" class="full-product-brand">Balenciaga</a>
+                            <a href="#" class="full-product-name">Balenciaga Running Shoes</a>
+                            <span class="full-product-price">$ 100.50</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(25 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/shoes/shoes1.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Shoes & Bags</span>
+                            <a href="#" class="full-product-brand">Nike</a>
+                            <a href="#" class="full-product-name">Nike Dual shoes Green-Dark</a>
+                            <span class="full-product-price">$ 20.00</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(873 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/shoes/bag2.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Shoes & Bags</span>
+                            <a href="#" class="full-product-brand">Puma</a>
+                            <a href="#" class="full-product-name">Puma Pink Backpack & School Bag</a>
+                            <span class="full-product-price">$ 183.00</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(77 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/home/furniture1.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Furniture</span>
+                            <a href="#" class="full-product-brand">Rio Light</a>
+                            <a href="#" class="full-product-name">Riolight Retro Black Inside Gold Single Metal Pendant Chandelier</a>
+                            <span class="full-product-price">$ 32.00</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(184 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/electronic/electronic6.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Electronics & Accessories</span>
+                            <a href="#" class="full-product-brand">Apple</a>
+                            <a href="#" class="full-product-name">Apple iPhone X 64GB Space Gray Mobile Phone</a>
+                            <span class="full-product-price">$ 340.50</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(1986 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/fashion/bluetshirt.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Clothing</span>
+                            <a href="#" class="full-product-brand">HUMMEL</a>
+                            <a href="#" class="full-product-name">Short sleeve T-shirt</a>
+                            <span class="full-product-price">$ 60.50</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(29 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/shoes/bag5.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Shoes & Bags</span>
+                            <a href="#" class="full-product-brand">Krista</a>
+                            <a href="#" class="full-product-name">Women's Shoulder Bag Medium Size</a>
+                            <span class="full-product-price">$ 40.50</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(2790 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/fashion/fashion2.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Clothing</span>
+                            <a href="#" class="full-product-brand">Bershka</a>
+                            <a href="#" class="full-product-name">Short Sleeve T-shirt</a>
+                            <span class="full-product-price">$ 20.50</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(1980 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/shoes/shoes4.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Shoes & Bags</span>
+                            <a href="#" class="full-product-brand">Timberland</a>
+                            <a href="#" class="full-product-name">BROWN Women's Boots</a>
+                            <span class="full-product-price">$ 346.75</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(1347 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/shoes/bag1.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Shoes & Bags</span>
+                            <a href="#" class="full-product-brand">Chanel</a>
+                            <a href="#" class="full-product-name">Brown Patterned Bag</a>
+                            <span class="full-product-price">$ 48.75</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(462 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/home/furniture2.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Furniture</span>
+                            <a href="#" class="full-product-brand">Bxd</a>
+                            <a href="#" class="full-product-name">High Quality Leather Swivel Computer Desk Office Chair</a>
+                            <span class="full-product-price">$ 70.50</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(16 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/home/furniture3.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Furniture</span>
+                            <a href="#" class="full-product-brand">ModeLight</a>
+                            <a href="#" class="full-product-name">ModeLight Deco Lampshade Black Foot-Hat Powder</a>
+                            <span class="full-product-price">$ 34.75</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(65 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/supermarket/market2.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Supermarket</span>
+                            <a href="#" class="full-product-brand">Cheetos</a>
+                            <a href="#" class="full-product-name">Cheetos Crunchy Flamin Hot 205gr</a>
+                            <span class="full-product-price">$ 1.99</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(250 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/spor/spor1.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Sport</span>
+                            <a href="#" class="full-product-brand">Tommy Hilfiger</a>
+                            <a href="#" class="full-product-name">Tommy Hilfiger Tjm Essential Duffle Sport Bag</a>
+                            <span class="full-product-price">$ 69.00</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(68 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/cosmetic/cosmetic.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Cosmetic</span>
+                            <a href="#" class="full-product-brand">Rimmel</a>
+                            <a href="#" class="full-product-name">Rimmel Pink Lipstick</a>
+                            <span class="full-product-price">$ 28.00</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(180 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/accessuar/ac6.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Watch & Accessories</span>
+                            <a href="#" class="full-product-brand">Cartier</a>
+                            <a href="#" class="full-product-name">Gold Ring</a>
+                            <span class="full-product-price">$ 400.00</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(189 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/electronic/electronic7.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Electronics & Accessories</span>
+                            <a href="#" class="full-product-brand">Xbox</a>
+                            <a href="#" class="full-product-name">Xbox One Elite Wireless Controller</a>
+                            <span class="full-product-price">$ 80.50</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(8 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/home/furniture6.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Furniture</span>
+                            <a href="#" class="full-product-brand">Lisa</a>
+                            <a href="#" class="full-product-name">White Corner Sofa</a>
+                            <span class="full-product-price">$ 870.50</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(208 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/shoes/bag3.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Shoes & Bags</span>
+                            <a href="#" class="full-product-brand">Cartier</a>
+                            <a href="#" class="full-product-name">Leather women bag</a>
+                            <span class="full-product-price">$ 40.50</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(34 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/accessuar/ac8.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Watch & Accessories</span>
+                            <a href="#" class="full-product-brand">Cross</a>
+                            <a href="#" class="full-product-name">Wrist Band Watch</a>
+                            <span class="full-product-price">$ 134.50</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(674 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/electronic/electronic5.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Electronics & Accessories</span>
+                            <a href="#" class="full-product-brand">Ceriotti</a>
+                            <a href="#" class="full-product-name">Professional Blow Dryer Pink 2500w</a>
+                            <span class="full-product-price">$ 80.75</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(569 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/electronic/electronic10.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Electronics & Accessories</span>
+                            <a href="#" class="full-product-brand">Sony</a>
+                            <a href="#" class="full-product-name">Sony Xperia 16GB 10.1" Tablet</a>
+                            <span class="full-product-price">$ 268.99</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(74 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/home/furniture10.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Furniture</span>
+                            <a href="#" class="full-product-brand">Industville</a>
+                            <a href="#" class="full-product-name">Industville - Brooklyn Glass Dome Pendant</a>
+                            <span class="full-product-price">$ 50.00</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(89 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/fashion/fashion7.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Clothing</span>
+                            <a href="#" class="full-product-brand">Defacto</a>
+                            <a href="#" class="full-product-name">Mens Winter Jacket</a>
+                            <span class="full-product-price">$ 80.99</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(108 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/fashion/fashion11.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Clothing</span>
+                            <a href="#" class="full-product-brand">Bershka</a>
+                            <a href="#" class="full-product-name">Crew Neck Short Sleeve Basic Men's T-Shirt</a>
+                            <span class="full-product-price">$ 20.50</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(1849 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/electronic/electronic3.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Electronics & Accessories</span>
+                            <a href="#" class="full-product-brand">Nikon</a>
+                            <a href="#" class="full-product-name">Nikon KeyMission 360 Action Camera</a>
+                            <span class="full-product-price">$ 240.50</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(102 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/fashion/fashion4.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Clothing</span>
+                            <a href="#" class="full-product-brand">Koton</a>
+                            <a href="#" class="full-product-name">Women's Vintage Red Dress</a>
+                            <span class="full-product-price">$ 47.50</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(574 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/spor/spor7.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Shoes & Bags</span>
+                            <a href="#" class="full-product-brand">Adidas</a>
+                            <a href="#" class="full-product-name">Adidas Running Shoe</a>
+                            <span class="full-product-price">$ 120.00</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(434 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/supermarket/market6.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Supermarket</span>
+                            <a href="#" class="full-product-brand">Snickers</a>
+                            <a href="#" class="full-product-name">Snickers Chocolate 50 gr</a>
+                            <span class="full-product-price">$ 1.50</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(256 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/electronic/electronic8.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Electronics & Accessories</span>
+                            <a href="#" class="full-product-brand">Master</a>
+                            <a href="#" class="full-product-name">Dust Bag Vacuum Cleaner</a>
+                            <span class="full-product-price">$ 99.50</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(24 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/fashion/fashion6.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Clothing</span>
+                            <a href="#" class="full-product-brand">Mavi</a>
+                            <a href="#" class="full-product-name">High Performance Light Socks</a>
+                            <span class="full-product-price">$ 15.50</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(4 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-product">
+                        <img src="../images/home/furniture4.png" alt="">
+                        <span class="heart-icon">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
+                        <div class="full-product-info">
+                            <span class="full-product-type">Furniture</span>
+                            <a href="#" class="full-product-brand">Modelsa</a>
+                            <a href="#" class="full-product-name">Modelsa Design Minimal Armchair With Felt Fabric Upholstery</a>
+                            <span class="full-product-price">$ 490.50</span>
+                            <div class="rating">
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span>(80 reviews)</span>
+                            </div>
+                            <div class="full-product-btns">
+                                <div class="full-product-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                    <a href="#" class="add-cart">Add To Cart</a>
+                                </div>
+                                <div class="full-product-btn">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                    <a href="#" class="view">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination-section">
+                    <ul class="pagination">
+                        <li class="pagination-item">
+                            <a href="#" class="pagination-link">Prev</a>
+                        </li>
+                        <li class="pagination-item"><a href="#" class="pagination-link active">1</a></li>
+                        <li class="pagination-item"><a href="#" class="pagination-link">2</a></li>
+                        <li class="pagination-item"><a href="#" class="pagination-link">3</a></li>
+                        <li class="pagination-item">
+                            <a href="#" class="pagination-link">Next</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Shop Section End -->
+
+    <!-- footer Section Start -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3 class="footer-title">Online Shop</h3>
+                    <ul class="online-shop-list">
+                        <li><a href="#">Shoe & Bag</a></li>
+                        <li><a href="#">Home & Furniture</a></li>
+                        <li><a href="#">Supermarket</a></li>
+                        <li><a href="#">Cosmetic</a></li>
+                        <li><a href="#">Watch & Accessories</a></li>
+                        <li><a href="#">Electronic</a></li>
+                        <li><a href="#">Sport</a></li>
+                        <li><a href="#">Fashion</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3 class="footer-title">Links</h3>
+                    <ul class="links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="favorities.html">Favorities</a></li>
+                        <li><a href="destek.html">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <p>
+                        <span class="contact-us-icon"><ion-icon name="location"></ion-icon></span>
+                        Turkey istanbul 24 Lorem ipsum dolor sit.
+                    </p>
+                    <p>
+                        <span class="contact-us-icon"><ion-icon name="mail"></ion-icon></span>
+                        shopgo@gmail.com
+                    </p>
+                    <p>
+                        <span class="contact-us-icon"><ion-icon name="call"></ion-icon></span>
+                        +521 323 232
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="footer-title">Follow Us</h3>
+                    <ul class="social-icons">
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer Section End -->
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- owl carousel -->
+    <script src = "../owl_carousel/owl.carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- my js -->
+    <script src="../js/index.js"></script>
+</body>
+</html>
